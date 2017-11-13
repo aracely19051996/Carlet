@@ -1,0 +1,136 @@
+<html>
+<head><title> PERUVIAN | VUELOS</title>
+    <link rel="stylesheet" href="estivuelo1.css">
+
+<script type="text/javascript" src="codigo.js"></script> 
+    
+	 </head>
+<body>
+    <table class="T1"width="66%" align="center" border="1">
+    <tr  class="t4">
+        <td><p class="i">PERUVIAN</p>
+        <p class="sub">La linea aerea del Per&uacute </p></td>
+        <td ><img src="IMAGENES/img1.jpg" ></td>
+    </tr>
+    <tr>
+        <td >
+<table  >  
+                    <form name="frm1" action="buscar.php"  method="POST">
+                    <tr>
+                        <td colspan="3" class="l1"> RESERVA TU VUELO</td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="3" class="l2" align="center">
+                        <input type="radio" value="1" name="habilitarDeshabilitar" onclick="change();" checked>Ida y Vuelta
+                        <input type="radio" value="2" name="habilitarDeshabilitar" onclick="change();">Solo ida</td>
+                    </tr>
+                    <tr>
+						<td height="15" colspan="3"></td>
+					</tr> 
+                    <tr>
+                        <td colspan="1" class="l3">Cuidad de Origen</td>
+                        <td colspan="2"><input   class="c" type="text" size="10" value="LIMA"  name="origen"disabled></td>
+                    </tr>
+                    <tr>
+						<td height="10" colspan="3"></td></tr>
+                    <tr>
+                        <td colspan="1" class="l3">Cuidad de Destino:</td>
+                        <td colspan="2"><select  class="c"name="destino" ><option value="cero">Seleccione su destino</option>
+                            <option value="JAUJA">JAUJA</option>
+                            <option value="CUSCO">CUSCO</option>
+                            <option value="AREQUIPA">AREQUIPA</option>
+                            <option value="IQUITOS">IQUITOS</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+						<td height="10" colspan="3"></td>
+					</tr>
+                    <tr>
+                        <td colspan="1" class="l3"> Fecha de Salida:</td>
+                        <td colspan="2"><input class="c" type="date" name="salida" size="10"></td>
+                    </tr>
+                    <tr>
+						<td height="10" colspan="6"></td></tr>
+                    <tr>
+                        <td colspan="1" class="l3"> Fecha de Retorno:</td>
+                        <td colspan="2"><input class="c" type="date" name="retorno" id="retorno" size="10"></td>
+                    </tr>
+                    <tr>
+						<td height="20" colspan="3"></td>
+					</tr>
+                    <tr  >
+			
+                        <td  class="l31" align="center"> Adultos</td>
+                        <td class="l31" align="center">Ni&ntilde;os</td>
+                        <td  class="l31" align="center">Infantes</td>
+                        </tr>
+                        <tr align="center"><td><input type="number" onclick="myFunction()"id="n1" value="0" class="c1"  name="n1" ></td>
+                        <td><input  class="c1" type="number" type="number" name="n2" value="0"min="0" size="6"></td>
+                        <td><input class="c1" type="number"  type="number" name="n3" value="0"min="0" size="6"></td></tr>
+                        <tr >
+                      <td class="l31" align="center">+12 a&ntilde;os</td>
+                       
+						<td class="l31" align="center">2-11 a&ntilde;os</td>
+                        
+						<td class="l31" align="center">-2 a&ntilde;os</td>
+                    </tr>
+                    <tr>
+						<td height="10" colspan="3"></td>
+					</tr>
+                    <tr >
+                        <td colspan="3" align="right"><input  class="box" type="submit"  value="BUSCAR VUELO" name="busqueda"></td>
+                    </tr>
+                    </form>
+                </table>		
+                
+		</td>
+        <td class="t2" > 
+                <table class="t21" align="center">
+                    <tr>
+                    <td  class="t3" >
+                        <table class="t3">
+                            <tr><td class="a1">Ida y vuelta</td></tr>
+                            <tr><td class="a2">LIMA</td></tr>
+                            <tr><td class="a2">AREQUIPA</td></tr>
+                            <tr><td class="a3">DESDE</td></tr>
+                            <tr><td class="a4"><sup>$</sup>61 | <sup>S/.</sup> 207</td></tr>
+                            <tr><td class="a1">o</td></tr>
+                            <tr><td class="a5">8,500kms PERUVIANPASS</td></tr></table></td>
+                        <td ></td>
+                    <td  class="t3"><table class="t3">
+                        <tr><td class="a1">Ida y vuelta</td></tr>
+                        <tr><td class="a2">LIMA</td></tr>
+                        <tr><td class="a2">IQUITOS</td></tr>
+                        <tr><td class="a3">DESDE</td></tr>
+                        <tr><td class="a4"><sup>$</sup>63 | <sup>S/.</sup> 212</td></tr>
+                        <tr><td class="a1">o</td></tr>
+                        <tr><td class="a5">8,500kms PERUVIANPASS</td></tr></table></td>
+					</tr>
+                    <tr height="10"></tr>
+                    <tr>
+                    <td class="t3"><table class="t3">
+                        <tr><td class="a1">Ida y vuelta</td></tr>
+                        <tr><td class="a2">LIMA</td></tr>
+                        <tr><td class="a2">JAUJA</td></tr>
+                        <tr><td class="a3">DESDE</td></tr>
+                        <tr><td class="a4"><sup>$</sup>47 | <sup>S/.</sup> 159</td></tr>
+                        <tr><td class="a1">o</td></tr>
+                        <tr><td class="a5">6,400kms PERUVIANPASS</td></tr></table></td>
+                        <td width="50"></td>
+                    <td class="t3"><table class="t3">
+                        <tr><td class="a1">Ida y vuelta</td></tr>
+                        <tr><td class="a2">LIMA</td></tr>
+                        <tr><td class="a2">CUSCO</td></tr>
+                        <tr><td class="a3">DESDE</td></tr>
+                        <tr><td class="a4"><sup>$</sup>58 | <sup>S/.</sup> 197</td></tr>
+                        <tr><td class="a1">o</td></tr>
+                        <tr><td class="a5">6,000kms PERUVIANPASS</td></tr></table></td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+
+
+</html>

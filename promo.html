@@ -1,0 +1,147 @@
+<HTML>
+<HEAD><link rel="shortcut icon" type="png" href="IMAGENES/logo.png"><TITLE>CARLET |Salon & Spa</title>
+<link rel="Stylesheet" type="text/css" href="estilos.css"></head>
+<script languaje="javascript">
+function proceso()
+{
+	var ser,de,o,re;
+	ser=frm1.ser.value*1  ;
+	de=frm1.de.value*1  ;
+	o=frm1.o1.value*1;
+	
+	re=0;
+	if (ser==1)
+	t=0
+	 else if (ser==2)
+	t=100*o
+	else  if(ser==3)
+	t=200*o
+	else	if (ser==4)
+	t=250*o
+	else if (ser==5)
+	t=300*o
+	if (de==2 && ser==2)
+	 d=t*0.2
+
+	else if (de==3 && ser==3)
+	   d=t*0.2
+	   
+	else if (de==4 && ser==4)
+	 d=t*0.2
+	 
+	else  if (de==5 && ser==5)
+	 d=t*0.2
+	   else d=0
+	   
+	
+	re=t-d
+		
+	//salida
+frm1.tex2.value=t;
+frm1.tex3.value=d;
+frm1.tex4.value=re;
+}
+
+	</script>
+<BODY >
+
+<form name="frm1">
+<table  align="center" bgcolor="white"width="80%"   >
+<tr>
+	<td  colspan="3"height="25"></td>
+</tr>
+<tr>
+	<td width="20"></td>
+	<td colspan="2"><p class="t1">PROMOCIONES</p></td>
+</tr>
+<tr>
+	<td width="20"></td>
+	<td colspan="2"><p class="t2">Inicio / PROMOCIONES</p></td>
+</tr>
+<tr>
+	<td height="25" colspan="3"></td>
+</tr>
+</TABLE >
+<table align="center" class="ok1">
+<tr align="center">
+<td rowspan="8"><img src="imagenes/7.png" width="500" height="350"></td></tr>
+
+
+<tr align="center">
+<td colspan="3" > <p class="t10">CALCULAR OFERTA</TD>
+</TR>
+<TR align="center">
+<TD colspan="3" > <p class="t5">Elegir servicio: <select name="ser">
+					<option value="1">------------</option>
+					<option value="2">Productos profesionales</option>
+					<option value="3">Reconstruccion keratina</option>
+					<option value="4">lavado y corte</option>
+					<option value="5">tratamientos capilares</option></selected></td>
+</tr>
+<tr align="center">
+<td colspan="3" > <p class="t5">¿Que dia deseas ser atendido?:<select name="de">
+					<option value="1">------------</option>
+					<option value="2">Lunes</option>
+					<option value="3">Martes</option>
+					<option value="4">Miercoles</option>
+					<option value="5">Jueves</option>
+					<option value="5">Viernes</option>
+					<option value="5">Sabado</option>
+					<option value="5">Domingo</option></selected></td>
+</tr>
+<tr align="center">
+<td colspan="3" ><p class="t5">¿Cuantas personas son?:<input type="number" name="o1" max="100" min="1" size="10"></td>
+</tr>
+
+<tr>
+<td ><p class="t5">total:<input type="text" name="tex2" size="10"></td>
+<td ><p class="t5">descuento:<input type="text" name="tex3" size="10"></td>
+<td  ><p class="t5">neto a pagar:<input type="text" name="tex4" size="10"></td>
+</tr>
+<tr align="center">
+<td colspan="3"><input type="reset" name="btn_lim" value="limpiar" "><input type="button" name="btn_enviar" value="calcular" ONCLICK="proceso()"></td>
+</tr>
+</table>
+
+
+
+
+</form>
+<table  align="center" bgcolor="#999999"width="100%" height="200" >
+<tr>
+	<td>
+		<table ALIGN="CENTER"> 
+			<tr><td><p class="t13"> SECCIONES</p></td></tr>
+			<tr><td><a href="nosotros.html"><p class="t14">Nosotros</p></a></td></tr>
+			<tr><td><a href="salon.html"><p class="t14">Salon</p></a></td></tr>
+			<tr><td><a href="spa.html"><p class="t14">Spa</p></a></td></tr>
+			<tr><td><a href="bloq.html"><p class="t14">Blog</p></a></td></tr>
+		</table>
+	</td>
+	<TD>
+		<TABLE  align="center"WIDTH="100">
+		<TR><TD><p class="t13">CONTÁCTENOS</p></TD><TR>
+		<tr><td><p class="t14">Oficina Administrativa</p></td></tr>
+			<tr><td><p class="t14"> Jr. josbel</p></td></tr>
+			<tr><td><p class="t14">Molina</p></td></tr>
+			<tr><td><p class="t14">Lima - Peru</p></td></tr>
+		</TABLE>
+	
+	</TD>
+	<TD>
+		<TABLE WIDTH="100" align="center">
+		<TR><TD><p class="t13">SIGUENOS</p></TD><TR>
+		<tr><td><p class="t14">Estamos donde tú estás. ¡Síguenos y déjanos tu comentario!</P></td></tr>
+			<tr><td><IMG SRC="IMAGENES/ICONO.png" width="160" height="30"> </td></tr>
+			
+		</TABLE>
+	
+	</TD>
+</tr>
+</table>
+<table   align="center" bgcolor="#666666"width="100%" height="50">
+<tr>
+	<td align="center"> <p class="tt1">© Copyright 2017 CARLET Salon & Spa</p></td>
+</tr>
+</BODY>
+</HTML>

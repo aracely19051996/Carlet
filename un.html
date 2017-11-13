@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" >
+  // the proof of concept: given a <input type="number">, which JavaScript events trigger a change of the number, by it controls and manual input
+var input = document.querySelector('input'),
+    log = document.querySelector('.log');
+multipleEventsListeners(input, 'keyup change', function(e){
+  log.textContent = 'New value: ' + this.value;
+});
+
+// just for demo purposes
+// gist: https://gist.github.com/juanbrujo/a1f77db1e6f7cb17b42b
+function multipleEventsListeners(elem, events, func) {
+  var event = events.split(' ');
+  for (var i = 0; i < event.length; i++) {
+    elem.addEventListener(event[i], func, false);
+  }
+}
+</script>
+</head>
+<body>
+  
+  <input type="number" value="1" />
+  <p class="log"></p>
+
+</body>
+</html>
